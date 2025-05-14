@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/vars.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/forms.css">
+  <link rel="stylesheet" href="./src/styles/media-queries.css"/>
+
 </head>
 <body>
-        <section>
-  <h2>Entrar</h2>
-  <fieldset>
-    <legend>Dados</legend>
-    <p>
-    <label for="name">
-      <span>Name: </span>
+  <form>
+    <div class="campo-email">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="idEmail">
+    </div>
+    <div class="campo-senha">
+      <label for="senha" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="idSenha">
+    </div>
+    <div class="caixa-lembrar">
+      <input type="checkbox" class="form-check-input" id="idLembrar">
+      <label class="form-check-label" for="caixa">Lembrar de mim</label>
+    </div>
+    <p><a href="reset-senha">Esqueci minha senha</a></p>
+    <button type="submit" class="btn">Entrar</button>
+  </form>
 
-    </label>
-    <input type="text" id="name" name="username" />
-  </p>
-  <p>
-    <label for="mail">
-      <span>E-mail: </span>
+  <div class="cadastro">
+    <p>Já tem cadastro?</p>
+    <p><a href="login.html">Clique aqui para entrar</a></p>
+  </div>
 
-    </label>
-    <input type="email" id="mail" name="usermail" />
-  </p>
-  <p>
-    <label for="pwd">
-      <span>Password: </span>
-    </label>
-    <input type="password" id="pwd" name="password" />
-  </p>
-  </fieldset>
-  <fieldset>
-    <legend>Endereço</legend>
-    <p>
-    <label for="name">
-      <span>Name: </span>
-    </label>
-    <input type="text" id="name" name="username" />
-  </p>
-  <p>
-    <label for="mail">
-      <span>E-mail: </span>
-    </label>
-    <input type="email" id="mail" name="usermail" />
-  </p>
-  <p>
-    <label for="pwd">
-      <span>Password: </span>
-    </label>
-    <input type="password" id="pwd" name="password" />
-  </p>
-  </fieldset>
-  
-</section>
+  <footer><footer>Copyright © ReAlimentar. Todos os direitos reservados.</footer></footer>
 </body>
 </html>

@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/vars.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/forms.css">
+  <link rel="stylesheet" href="./src/styles/media-queries.css"/>
+
 </head>
 <body>
-    <section>
-  <h2>Entrar</h2>
-  <fieldset>
-  <p>
-    <label for="mail">
-      <span>E-mail: </span>
-    </label>
-    <input type="email" id="mail" name="usermail" />
-  </p>
-  <p>
-    <label for="pwd">
-      <span>Password: </span>
-    </label>
-    <input type="password" id="pwd" name="password" />
-  </p>
-  </fieldset>
-  
-</section>
+  <form>
+    <div class="campo-email">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="idEmail">
+    </div>
+    <div class="campo-senha">
+      <label for="senha" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="idSenha">
+    </div>
+    <div class="caixa-lembrar">
+      <input type="checkbox" class="form-check-input" id="idLembrar">
+      <label class="form-check-label" for="caixa">Lembrar de mim</label>
+    </div>
+    <p><a href="reset-senha">Esqueci minha senha</a></p>
+    <button type="submit" class="btn">Entrar</button>
+  </form>
 
+  <div class="cadastro">
+    <p>Não tem uma conta?</p>
+    <p><a href="cadastro.html">Clique aqui para se cadastrar</a></p>
+  </div>
+
+  <footer><footer>Copyright © ReAlimentar. Todos os direitos reservados.</footer></footer>
 </body>
 </html>

@@ -1,0 +1,8 @@
+:root {
+  --font-default: "DM Sans", sans-serif;
+
+  --cor-tema: #771c1c;
+
+  --grid-gap: 24px;
+  --column-count: 5;
+}
