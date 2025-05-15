@@ -1,21 +1,65 @@
 form {
-    border: 1px black solid;
-    height: 50vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     display: block;
     justify-content:center;
     align-items: center;
     padding: 0.625rem;
     margin: .5rem;
-}
-
-input {
-    padding: 2px;
-}
-
-p {
     text-align: center;
 }
 
-.btn {
+.campo-email, .campo-senha{
+    display: block;
+    margin: 25px 0;
+}
 
+.form-control{
+    padding: 20px;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    font-size: 0.8em;
+}
+
+.btn {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    width: 50%;
+    background-color: var(--cor-tema);
+    color: white;
+    font-size: 1em;
+}
+
+.cadastro {
+    border: 1px black solid;
+    display: block;
+    justify-content:center;
+    align-items: center;
+    padding: 0.625rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.link a {
+    color: var(--cor-tema);
+}
+
+/*Especificidades do cadastro */
+
+.formulario {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }

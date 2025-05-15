@@ -13,28 +13,104 @@
 
 </head>
 <body>
-  <form>
-    <div class="campo-email">
-      <label for="email" class="form-label">E-mail</label>
-      <input type="email" class="form-control" id="idEmail">
+
+    <div class="btn">
+        <button class="option" onclick="mostrarFormulario('doar')">Quero doar</button>
+        <button class="option" onclick="mostrarFormulario('receber')">Quero receber</button>
     </div>
-    <div class="campo-senha">
-      <label for="senha" class="form-label">Senha</label>
-      <input type="password" class="form-control" id="idSenha">
+
+    <div id="formDoar" class="formulario">
+        <h2>CADASTRE SUA EMPRESA</h2>
+        <label for="nome">Nome social</label>
+        <input type="text" id="idNome">
+
+        <label for="cnpj">CNPJ</label>
+        <input type="number" id="idCnpj">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="idEmail">
+
+        <label for="tel">Telefone</label>
+        <input type="number" id="idTelefone">
+        
+        <label for="senha">Senha</label>
+        <input type="password" id="idSenha">
+
+        <div class="loc">
+          <label for="estado">Estado</label>
+          <input type="text" id="idEstado">
+
+          <label for="cep">CEP</label>
+          <input type="number" id="idCep">
+
+          <label for="rua">Rua</label>
+          <input type="text" id="idRua">
+
+          <label for="nro">N°</label>
+          <input type="number" id="idNro">
+
+          <label for="bairro">Bairro</label>
+          <input type="text" id="idBairro">
+        </div>
     </div>
-    <div class="caixa-lembrar">
-      <input type="checkbox" class="form-check-input" id="idLembrar">
-      <label class="form-check-label" for="caixa">Lembrar de mim</label>
+
+    <div id="formReceber" class="formulario">
+      <h2>CADASTRE SUA ONG</h2>
+      <label for="nome">Nome social</label>
+      <input type="text" id="idNome">
+
+      <label for="cnpj">CNPJ</label>
+      <input type="number" id="idCnpj">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="idEmail">
+
+      <label for="tel">Telefone</label>
+      <input type="number" id="idTelefone">
+
+      <label for="senha">Senha</label>
+      <input type="password" id="idSenha">
+
+      <div class="loc">
+        <label for="estado">Estado</label>
+        <input type="text" id="idEstado">
+
+        <label for="cep">CEP</label>
+        <input type="number" id="idCep">
+
+        <label for="rua">Rua</label>
+        <input type="text" id="idRua">
+
+        <label for="nro">N°</label>
+        <input type="number" id="idNro">
+
+        <label for="bairro">Bairro</label>
+        <input type="text" id="idBairro">
+      </div>
     </div>
-    <p><a href="reset-senha">Esqueci minha senha</a></p>
-    <button type="submit" class="btn">Entrar</button>
-  </form>
 
   <div class="cadastro">
     <p>Já tem cadastro?</p>
-    <p><a href="login.html">Clique aqui para entrar</a></p>
+    <p class="link"><a href="login.html">Clique aqui para entrar</a></p>
   </div>
 
   <footer><footer>Copyright © ReAlimentar. Todos os direitos reservados.</footer></footer>
+
+  <script>
+        function mostrarFormulario(opcao) {
+            const formDoar = document.getElementById('formDoar');
+            const formReceber = document.getElementById('formReceber');
+
+            formDoar.style.display = 'none';
+            formReceber.style.display = 'none';
+
+            if (opcao === 'doar') {
+                formDoar.style.display = 'block';
+            } else if (opcao === 'receber') {
+                formReceber.style.display = 'block';
+            }
+        }
+    </script>
+
 </body>
 </html>
