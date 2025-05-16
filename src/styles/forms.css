@@ -9,7 +9,7 @@ form {
     text-align: center;
 }
 
-.campo-email, .campo-senha{
+.campo-cnpj, .campo-senha{
     display: block;
     margin: 25px 0;
 }
@@ -57,7 +57,7 @@ form {
 
 /*Especificidades do cadastro */
 .formulario {
-    display: none;
+    display: block;
     margin: .5rem;
     padding: 15px;
     border: 1px solid #ccc;
@@ -94,17 +94,11 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: .5rem;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.btn-opt {
-    width: 40vw;
     padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--cor-tema);
-    color: white;
+    display: flex;
+    justify-content: center;
 }
 
+.option div {
+    margin-right: 50px;
+}
