@@ -18,7 +18,7 @@ form {
     padding: 20px;
     border: 1px solid #acacac;
     border-radius: 15px;
-    width: 50%;
+    width: 50vw;
 }
 
 .form-check {
@@ -41,7 +41,8 @@ form {
 }
 
 .cadastro {
-    border: 1px black solid;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     display: block;
     justify-content:center;
     align-items: center;
@@ -55,11 +56,55 @@ form {
 }
 
 /*Especificidades do cadastro */
-
 .formulario {
     display: none;
-    margin-top: 20px;
+    margin: .5rem;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
 }
+
+.formulario input {
+    display: block;
+    margin: 5px auto 20px auto;
+    padding: 10px;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    width: 50vw;
+}
+
+.loc {
+  text-align: left;
+}
+
+.loc input {
+    display: inline;
+}
+
+#idEstados, #idNro {
+    width: 10vw;
+}
+
+#idCep {
+    width: 45vw;
+}
+
+.option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: .5rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-opt {
+    width: 40vw;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-tema);
+    color: white;
+}
+
